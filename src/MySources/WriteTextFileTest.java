@@ -20,7 +20,7 @@ public class WriteTextFileTest {
 
         //出力ストリーム
 		try{
-			Files.write(Paths.get("C:\\pleiades\\test\\sample2.txt"),
+			Files.write(Paths.get("C:\\pleiades\\pleiades-2019-12-java-win-64bit-jre_20200213\\pleiades\\workspace\\writeTextTest\\Resources\\test\\sample2.txt"),
 					list,
 					StandardCharsets.UTF_8);
 		} catch (IOException e) {
@@ -29,7 +29,7 @@ public class WriteTextFileTest {
 
 		//(出力されたテキストファイルを、コンソールで即座に確認するための)入力ストリーム
 		try( BufferedReader reader = Files.newBufferedReader(
-			    Paths.get("C:\\pleiades\\test\\sample2.txt"))){
+			    Paths.get("C:\\pleiades\\pleiades-2019-12-java-win-64bit-jre_20200213\\pleiades\\workspace\\writeTextTest\\Resources\\test\\sample2.txt"))){
 	       	 var line = "";
 	       	 while((line = reader.readLine()) != null) {
 	       	   System.out.println(line);
